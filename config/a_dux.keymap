@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
 
 #define def 0
 #define num 1
@@ -140,7 +141,7 @@
                 nav {
 //             ┌─────┐                                          ┌─────┐
 //       ┌─────┤     ├─────┬─────┐                  ┌─────┬─────┤  ↑  ├─────┐
-//       │     ├─────┤     │     │                  │ Ins │ Mut ├─────┤ VlU │
+//       │     ├─────┤ Usb │ Ble │                  │ Ins │ Mut ├─────┤ VlU │
 // ┌─────┼─────┤ SFT ├─────┼─────┤                  ├─────┼─────┤  ↓  ├─────┼─────┐
 // │     │ ALT ├─────┤ GUI │ BtC │                  │ Del │  ←  ├─────┤  →  │ VlD │
 // ├─────┼─────┤ Bt2 ├─────┼─────┤                  ├─────┼─────┤ PgU ├─────┼─────┤
@@ -151,7 +152,7 @@
 //                         └─────┴─────┘      └─────┴─────┘
 
                         bindings = <
-    &trans       &trans      &trans      &trans       &trans
+    &trans       &trans      &trans      &out OUT_USB       &out OUT_BLE
         &kp INS        &kp K_MUTE      &kp UP      &kp C_VOL_UP      &kp C_VOL_DN
 
     &kp LCTRL     &kp LALT       &kp LSHFT     &kp LGUI     &bt BT_CLR
@@ -169,7 +170,7 @@
                 fn {
 //             ┌─────┐                                          ┌─────┐
 //       ┌─────┤ F3  ├─────┬─────┐                  ┌─────┬─────┤     ├─────┐
-//       │ F2  ├─────┤  F4 │     │                  │     │     ├─────┤     │
+//       │ F2  ├─────┤  F4 │     │                  │ Ble │ Usb ├─────┤     │
 // ┌─────┼─────┤  F7 ├─────┼─────┤                  ├─────┼─────┤ SFT ├─────┼─────┐
 // │ F1  │ F6  ├─────┤  F8 │     │                  │     │ GUI ├─────┤ ALT │     │
 // ├─────┼─────┤ F11 ├─────┼─────┤                  ├─────┼─────┤     ├─────┼─────┤
@@ -181,7 +182,7 @@
 
                         bindings = <
     &kp F1        &kp F2      &kp F3      &kp F4       &trans
-        &trans       &trans      &trans      &trans       &trans
+        &out OUT_BLE       &out OUT_USB      &trans      &trans       &trans
 
     &kp F5        &kp F6      &kp F7      &kp F8       &trans
         &trans      &kp RGUI        &kp RSHFT        &kp RALT        &kp RCTRL
