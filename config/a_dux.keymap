@@ -48,15 +48,7 @@
             lplt: lplt {
                 compatible = "zmk,behaviors-mod-morph";
                 label = "LEFT_PAREN_LESS_THAN";
-                bindings = <&kp LPAR>, <&kp LT>;
-                #binding-cells = <0>;
-                mods = <(MOD_LSFT|MOD_RSFT)>;
-                masked_mods = <(MOD_LSFT|MOD_RSFT)>;
-            };
-            rpgt: rpgt {
-                compatible = "zmk,behaviors-mod-morph";
-                label = "RIGHT_PAREN_GREATER_THAN";
-                bindings = <&kp RPAR>, <&kp GT>;
+                bindings = <&kp ESC>, <&kp GRAVE>;
                 #binding-cells = <0>;
                 mods = <(MOD_LSFT|MOD_RSFT)>;
                 masked_mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -132,7 +124,7 @@
 // ┌─────┼─────┤  (  ├─────┼─────┤                  ├─────┼─────┤ SFT ├─────┼─────┐
 // │lplt │  '  ├─────┤  )  │     │                  │ Rst │ GUI ├─────┤ SFT │     │
 // ├─────┼─────┤  [  ├─────┼─────┤                  ├─────┼─────┤     ├─────┼─────┤
-// │rpgt │  \  ├─────┤  ]  │     │                  │ Bld │     ├─────┤     │ CTL │
+// │     │  \  ├─────┤  ]  │     │                  │ Bld │     ├─────┤     │ CTL │
 // ├─────┼─────┘     └─────┴─────┘                  └─────┴─────┘     └─────┼─────┤
 // │     │                 ┌─────┬─────┐      ┌─────┬─────┐                 │     │
 // └─────┘                 │ TAB │     │      │     │     │                 └─────┘
@@ -142,7 +134,7 @@
     &lplt      &kp GRAVE       &kp LBRC      &kp RBRC       &trans
         &trans       &trans      &trans      &trans       &trans
 
-    &rpgt      &kp SQT     &kp LPAR      &kp RPAR       &trans
+    &trans      &kp SQT     &kp LPAR      &kp RPAR       &trans
         &reset     &kp RGUI        &kp RSHFT        &kp RALT        &kp RCTRL
 
     &trans      &kp BSLH      &kp LBKT      &kp RBKT       &trans
