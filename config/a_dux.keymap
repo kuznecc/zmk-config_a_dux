@@ -48,16 +48,18 @@
             lplt: left_paren_less_than {
                 compatible = "zmk,behaviors-mod-morph";
                 label = "LEFT_PAREN_LESS_THAN";
-                #binding-cells = <0>;
                 bindings = <&kp LPAR>, <&kp LT>;
+                #binding-cells = <0>;
                 mods = <(MOD_LSFT|MOD_RSFT)>;
+                masked_mods = <(MOD_LSFT|MOD_RSFT)>;
             };
             rpgt: right_paren_greater_than {
                 compatible = "zmk,behaviors-mod-morph";
                 label = "RIGHT_PAREN_GREATER_THAN";
-                #binding-cells = <0>;
                 bindings = <&kp RPAR>, <&kp GT>;
+                #binding-cells = <0>;
                 mods = <(MOD_LSFT|MOD_RSFT)>;
+                masked_mods = <(MOD_LSFT|MOD_RSFT)>;
             };
         };
 
