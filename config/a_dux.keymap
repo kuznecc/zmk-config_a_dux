@@ -45,7 +45,7 @@
                 bindings = <&kp>, <&kp>;
                 hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33>;
             };
-            lplt: left_paren_less_than {
+            lplt: lplt {
                 compatible = "zmk,behaviors-mod-morph";
                 label = "LEFT_PAREN_LESS_THAN";
                 bindings = <&kp LPAR>, <&kp LT>;
@@ -53,7 +53,7 @@
                 mods = <(MOD_LSFT|MOD_RSFT)>;
                 masked_mods = <(MOD_LSFT|MOD_RSFT)>;
             };
-            rpgt: right_paren_greater_than {
+            rpgt: rpgt {
                 compatible = "zmk,behaviors-mod-morph";
                 label = "RIGHT_PAREN_GREATER_THAN";
                 bindings = <&kp RPAR>, <&kp GT>;
