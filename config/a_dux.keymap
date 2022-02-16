@@ -27,7 +27,7 @@
 
 / {
         behaviors {
-            mt_l: left_hand_positional_hold_tap {
+            hm_l: left_hand_positional_hold_tap {
                 compatible = "zmk,behavior-hold-tap";
                 label = "LEFT_POSITIONAL_HOLD_TAP";
                 #binding-cells = <2>;
@@ -36,7 +36,7 @@
                 bindings = <&kp>, <&kp>;
                 hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 30 31 32 33>;
             };
-            mt_r: right_hand_positional_hold_tap {
+            hm_r: right_hand_positional_hold_tap {
                 compatible = "zmk,behavior-hold-tap";
                 label = "RIGHT_POSITIONAL_HOLD_TAP";
                 #binding-cells = <2>;
@@ -68,8 +68,8 @@
     &kp W       &kp L       &kp R       &kp B       &kp Z
         &kp SEMI        &kp Q       &kp U       &kp D       &kp J
 
-    &mt_l LCTRL S     &mt_l LALT H      &mt_l LSHFT N     &mt_l LGUI T     &kp COMMA
-        &kp DOT     &mt_r RGUI A      &mt_r RSHFT E     &mt_r RALT O      &mt_r RCTRL I
+    &hm_l LCTRL S     &hm_l LALT H      &hm_l LSHFT N     &hm_l LGUI T     &kp COMMA
+        &kp DOT     &hm_r RGUI A      &hm_r RSHFT E     &hm_r RALT O      &hm_r RCTRL I
 
     &kp F       &kp M       &kp V       &kp C       &kp SLASH
         &kp G       &kp P       &kp X       &kp K       &kp Y
