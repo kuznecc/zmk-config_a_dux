@@ -51,14 +51,14 @@
                 #binding-cells = <0>;
                 bindings = <&kp LPAR>, <&kp LT>;
                 mods = <(MOD_LSFT|MOD_RSFT)>;
-            }
+            };
             rpgt: right_paren_greater_than {
                 compatible = "zmk,behaviors-mod-morph";
                 label = "RIGHT_PAREN_GREATER_THAN";
                 #binding-cells = <0>;
                 bindings = <&kp RPAR>, <&kp GT>;
                 mods = <(MOD_LSFT|MOD_RSFT)>;
-            }
+            };
         };
 
 	    keymap {
