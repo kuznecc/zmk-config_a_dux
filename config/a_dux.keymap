@@ -99,11 +99,11 @@
 //       ┌─────┤     ├─────┬─────┐                  ┌─────┬─────┤  8  ├─────┐
 //       │     ├─────┤     │     │                  │     │  7  ├─────┤  9  │
 // ┌─────┼─────┤ SFT ├─────┼─────┤                  ├─────┼─────┤  5  ├─────┼─────┐
-// │     │ ALT ├─────┤ GUI │ Rst │                  │     │  4  ├─────┤  6  │  0  │
+// │     │ ALT ├─────┤ GUI │     │                  │     │  4  ├─────┤  6  │  0  │
 // ├─────┼─────┤ CAP ├─────┼─────┤                  ├─────┼─────┤  2  ├─────┼─────┤
-// │ CTL │     ├─────┤     │ Bld │                  │     │  1  ├─────┤  3  │  -  │
+// │ CTL │     ├─────┤     │     │                  │     │  1  ├─────┤  3  │     │
 // ├─────┼─────┘     └─────┴─────┘                  └─────┴─────┘     └─────┼─────┤
-// │     │                 ┌─────┬─────┐      ┌─────┬─────┐                 │  =  │
+// │     │                 ┌─────┬─────┐      ┌─────┬─────┐                 │     │
 // └─────┘                 │     │     │      │     │ BSP │                 └─────┘
 //                         └─────┴─────┘      └─────┴─────┘
 
@@ -111,10 +111,10 @@
     &trans     &trans       &trans      &trans      &trans
         &trans        &kp N7      &kp N8      &kp N9      &kp N0
 
-    &kp LCTRL     &kp LALT       &kp LSHFT     &kp LGUI     &reset
+    &kp LCTRL     &kp LALT       &kp LSHFT     &kp LGUI     &trans
         &trans     &kp N4      &kp N5     &kp N6      &trans
 
-    &trans       &trans      &kp CLCK      &trans       &bootloader
+    &trans       &trans      &kp CLCK      &trans       &trans
         &trans       &kp N1       &kp N2       &kp N3       &trans
 
     &trans      &trans
@@ -128,9 +128,9 @@
 //       ┌─────┤  [  ├─────┬─────┐                  ┌─────┬─────┤     ├─────┐
 //       │  `  ├─────┤  ]  │     │                  │     │     ├─────┤     │
 // ┌─────┼─────┤ lpl ├─────┼─────┤                  ├─────┼─────┤ SFT ├─────┼─────┐
-// │     │  '  ├─────┤ rpg │     │                  │ Rst │ GUI ├─────┤ SFT │     │
+// │     │  '  ├─────┤ rpg │     │                  │     │ GUI ├─────┤ SFT │     │
 // ├─────┼─────┤  -  ├─────┼─────┤                  ├─────┼─────┤     ├─────┼─────┤
-// │     │  \  ├─────┤  =  │     │                  │ Bld │     ├─────┤     │ CTL │
+// │     │  \  ├─────┤  =  │     │                  │     │     ├─────┤     │ CTL │
 // ├─────┼─────┘     └─────┴─────┘                  └─────┴─────┘     └─────┼─────┤
 // │     │                 ┌─────┬─────┐      ┌─────┬─────┐                 │     │
 // └─────┘                 │ TAB │     │      │     │     │                 └─────┘
@@ -141,10 +141,10 @@
         &trans       &trans      &trans      &trans       &trans
 
     &trans      &kp SQT     &lplt      &rpgt       &trans
-        &reset     &kp RGUI        &kp RSHFT        &kp RALT        &kp RCTRL
+        &trans     &kp RGUI        &kp RSHFT        &kp RALT        &kp RCTRL
 
     &trans      &kp BSLH      &kp MINUS      &kp EQUAL       &trans
-        &bootloader     &trans       &trans      &trans      &trans
+        &trans     &trans       &trans      &trans      &trans
 
     &kp TAB     &trans
         &trans      &trans
