@@ -68,25 +68,25 @@
                 def {
 //             ┌─────┐                                          ┌─────┐
 //       ┌─────┤  R  ├─────┬─────┐                  ┌─────┬─────┤  U  ├─────┐
-//       │  L  ├─────┤  B  │  Z  │                  │  ;  │  Q  ├─────┤  D  │
+//       │  L  ├─────┤  B  │     │                  │     │  Q  ├─────┤  D  │
 // ┌─────┼─────┤  N  ├─────┼─────┤                  ├─────┼─────┤  E  ├─────┼─────┐
-// │  W  │  H  ├─SFT─┤  T  │  ,  │                  │  .  │  A  ├─SFT─┤  O  │  J  │
+// │  W  │  H  ├─SFT─┤  T  │  F  │                  │  Y  │  A  ├─SFT─┤  O  │  J  │
 // ├─────┼─ALT─┤  V  ├─GUI─┼─────┤                  ├─────┼─GUI─┤  X  ├─ALT─┼─────┤
-// │  S  │  M  ├─────┤  C  │  ?  │                  │  G  │  P  ├─────┤  K  │  I  │
+// │  S  │  M  ├─────┤  C  │  Z  │                  │  G  │  P  ├─────┤  K  │  I  │
 // ├─CTL─┼─────┘     └─────┴─────┘                  └─────┴─────┘     └─────┼─CTL─┤
-// │  F  │                 ┌─────┬─────┐      ┌─────┬─────┐                 │  Y  │
+// │     │                 ┌─────┬─────┐      ┌─────┬─────┐                 │     │
 // └─────┘                 │ SPC │ ESC │      │ RET │ SPC │                 └─────┘
 //                         └ num ┴ nav ┘      └─fn──┴ sym ┘
 
                         bindings = <
-    &kp W       &kp L       &kp R       &kp B       &kp Z
-        &kp SEMI        &kp Q       &kp U       &kp D       &kp J
+    &kp W       &kp L       &kp R       &kp B       &trans
+        &trans        &kp Q       &kp U       &kp D       &kp J
 
-    &hm_l LCTRL S     &hm_l LALT H      &hm_l LSHFT N     &hm_l LGUI T     &kp COMMA
-        &kp DOT     &hm_r RGUI A      &hm_r RSHFT E     &hm_r RALT O      &hm_r RCTRL I
+    &hm_l LCTRL S     &hm_l LALT H      &hm_l LSHFT N     &hm_l LGUI T     &kp F
+        &kp Y     &hm_r RGUI A      &hm_r RSHFT E     &hm_r RALT O      &hm_r RCTRL I
 
-    &kp F       &kp M       &kp V       &kp C       &kp SLASH
-        &kp G       &kp P       &kp X       &kp K       &kp Y
+    &trans       &kp M       &kp V       &kp C       &kp Z
+        &kp G       &kp P       &kp X       &kp K       &trans
 
     &lt num SPACE       &lt nav ESC
         &lt fn RET      &lt sym SPACE
@@ -99,9 +99,9 @@
 //       ┌─────┤     ├─────┬─────┐                  ┌─────┬─────┤  8  ├─────┐
 //       │     ├─────┤     │     │                  │     │  7  ├─────┤  9  │
 // ┌─────┼─────┤ SFT ├─────┼─────┤                  ├─────┼─────┤  5  ├─────┼─────┐
-// │     │ ALT ├─────┤ GUI │     │                  │     │  4  ├─────┤  6  │  0  │
+// │     │ ALT ├─────┤ GUI │     │                  │  .  │  4  ├─────┤  6  │  0  │
 // ├─────┼─────┤ CAP ├─────┼─────┤                  ├─────┼─────┤  2  ├─────┼─────┤
-// │ CTL │     ├─────┤     │     │                  │     │  1  ├─────┤  3  │     │
+// │ CTL │     ├─────┤     │     │                  │  ;  │  1  ├─────┤  3  │     │
 // ├─────┼─────┘     └─────┴─────┘                  └─────┴─────┘     └─────┼─────┤
 // │     │                 ┌─────┬─────┐      ┌─────┬─────┐                 │     │
 // └─────┘                 │     │     │      │     │ BSP │                 └─────┘
@@ -112,10 +112,10 @@
         &trans        &kp N7      &kp N8      &kp N9      &kp N0
 
     &kp LCTRL     &kp LALT       &kp LSHFT     &kp LGUI     &trans
-        &trans     &kp N4      &kp N5     &kp N6      &trans
+        &kp DOT     &kp N4      &kp N5     &kp N6      &trans
 
     &trans       &trans      &kp CLCK      &trans       &trans
-        &trans       &kp N1       &kp N2       &kp N3       &trans
+        &kp SEMI       &kp N1       &kp N2       &kp N3       &trans
 
     &trans      &trans
         &trans      &kp BSPC
@@ -128,9 +128,9 @@
 //       ┌─────┤  [  ├─────┬─────┐                  ┌─────┬─────┤     ├─────┐
 //       │  `  ├─────┤  ]  │     │                  │     │     ├─────┤     │
 // ┌─────┼─────┤ lpl ├─────┼─────┤                  ├─────┼─────┤ SFT ├─────┼─────┐
-// │     │  '  ├─────┤ rpg │     │                  │     │ GUI ├─────┤ SFT │     │
+// │     │  '  ├─────┤ rpg │  ,  │                  │     │ GUI ├─────┤ SFT │     │
 // ├─────┼─────┤  -  ├─────┼─────┤                  ├─────┼─────┤     ├─────┼─────┤
-// │     │  \  ├─────┤  =  │     │                  │     │     ├─────┤     │ CTL │
+// │     │  \  ├─────┤  =  │  /  │                  │     │     ├─────┤     │ CTL │
 // ├─────┼─────┘     └─────┴─────┘                  └─────┴─────┘     └─────┼─────┤
 // │     │                 ┌─────┬─────┐      ┌─────┬─────┐                 │     │
 // └─────┘                 │ TAB │     │      │     │     │                 └─────┘
@@ -140,10 +140,10 @@
     &trans      &kp GRAVE       &kp LBKT      &kp RBKT       &trans
         &trans       &trans      &trans      &trans       &trans
 
-    &trans      &kp SQT     &lplt      &rpgt       &trans
+    &trans      &kp SQT     &lplt      &rpgt       &kp COMMA
         &trans     &kp RGUI        &kp RSHFT        &kp RALT        &kp RCTRL
 
-    &trans      &kp BSLH      &kp MINUS      &kp EQUAL       &trans
+    &trans      &kp BSLH      &kp MINUS      &kp EQUAL       &kp SLASH
         &trans     &trans       &trans      &trans      &trans
 
     &kp TAB     &trans
