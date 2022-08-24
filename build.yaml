@@ -13,7 +13,9 @@
 #
 ---
 include:
-  - board: nice_nano_v2
+  - board: nrfmicro_13
     shield: a_dux_left
-  - board: nice_nano_v2
+  - board: nrfmicro_13
     shield: a_dux_right
+  - board: nrfmicro_13
+    shield: settings_reset
