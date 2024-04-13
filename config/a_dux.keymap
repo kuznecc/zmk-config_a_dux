@@ -246,7 +246,7 @@
     };
 
     macros {
-        lc: mo_layer_switch_with_an_embeded_cancel_tap_for_clearing_any_queued_sticky_mods_on_press {
+        lc: mo_layer_switch_with_an_embeded_cancel_tap { /mo_layer_switch_with_an_embeded_cancel_tap_for_clearing_any_queued_sticky_mods_on_press/
             compatible = "zmk,behavior-macro-one-param";
             wait-ms = <0>;
             tap-ms = <0>;
