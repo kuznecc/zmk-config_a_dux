@@ -137,25 +137,31 @@
 
         sys_toggle_bt0_connection {
             key-positions = <3 4>;
-            layers = <FUN>;
+            layers = <1>;
             bindings = <&bt BT_SEL 0>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <200>;
         };
 
         sys_toggle_bt1_connection {
             key-positions = <13 14>;
-            layers = <FUN>;
+            layers = <1>;
             bindings = <&bt BT_SEL 1>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <200>;
         };
 
         sys_toggle_bt2_connection {
             key-positions = <23 24>;
-            layers = <FUN>;
+            layers = <1>;
             bindings = <&bt BT_SEL 2>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <200>;
         };
 
         sys_clear_current_bluetooth_profile {
             key-positions = <28 29>;
-            layers = <FUN>;
+            layers = <1>;
             bindings = <&bt BT_CLR>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
