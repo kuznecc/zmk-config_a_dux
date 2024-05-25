@@ -351,16 +351,16 @@ combos:
   l: [function_and_number_row]
 - p: [3, 4]
   k: {t: BT, h: '0'}
-  l: [function_and_number_row]
+  l: [numword]
 - p: [13, 14]
   k: {t: BT, h: '1'}
-  l: [function_and_number_row]
+  l: [numword]
 - p: [23, 24]
   k: {t: BT, h: '2'}
-  l: [function_and_number_row]
+  l: [numword]
 - p: [28, 29]
   k: BT CLR
-  l: [function_and_number_row]
+  l: [numword]
 - p: [4, 33]
   k: '~'
   l: [default]
