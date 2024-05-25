@@ -1,8 +1,8 @@
+#include "mouse.dtsi"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
-#include "mouse.dtsi"
 
 #define DEF 0
 #define NWD 1
@@ -157,6 +157,8 @@
             key-positions = <28 29>;
             layers = <FUN>;
             bindings = <&bt BT_CLR>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <200>;
         };
 
         // Anachronic inspired combos to avoid problems SYM keys in quick succession when the corresponding key is pressed quickly before the layer key (https://github.com/theol0403/anachron-zmk-config)
@@ -246,7 +248,7 @@
     };
 
     macros {
-        lc: mo_layer_switch_with_an_embeded_cancel_tap { 
+        lc: mo_layer_switch_with_an_embeded_cancel_tap {
             compatible = "zmk,behavior-macro-one-param";
             wait-ms = <0>;
             tap-ms = <0>;
